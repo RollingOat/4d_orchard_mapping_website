@@ -1,0 +1,63 @@
+baseurl      = "https://example.org/"
+title        = "4D Metric-Semantic Mapping for Persistant Orchard Monitoring: Method and Dataset"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "A simple and beautiful blog"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = true
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[markup.goldmark.renderer]
+    unsafe= true
+    
+[languages]
+  [languages.en.params]
+    title = "4D METRIC SEMANTIC MAPPING"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+    subtitle  = "A simple theme for Hugo"
+
+    [languages.en.params.logo]
+      logoText = "4D METRIC SEMANTIC MAPPING FOR ORCHARDS"
+      logoHomeLink = "/"
+
+# And you can even create generic menu
+[menus]
+  [[menus.main]]
+    name = 'Overview'
+    pageRef = '/overview'
+    weight = 20
+  [[menus.main]]
+    name = 'Data'
+    pageRef = '/data'
+    weight = 20
+  [[menus.main]]
+    name = 'Downloads'
+    url = 'https://tnl.treescope.org/4dMetricSemantic/'
+    weight = 30
