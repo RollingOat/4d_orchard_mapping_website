@@ -4,8 +4,7 @@
 we present a 4D spatio-temporal metric-semantic mapping method that fuses data from multiple sensors, including LiDAR, RGB camera, and IMU, to monitor the fruits in an orchard across their growth season, providing information such as fruit counts, sizes, and positions. We achieve a 3.1 percent error in total fruit count estimation for over 1,790 fruits across 60 apple trees, along with accurate size estimation results with a mean error of 1.1 cm. 
 </div>
 
-
-{{< youtube QujF8rruM74 >}}
+{{< youtube uzHNjeqAk-0 >}}
 
 
 <!-- ### Citation
@@ -13,7 +12,7 @@ Arxiv link to be added -->
 
 ### System Diagram
 
-![demo](/4d-system-diagram.png)
+{{< img src="4d-system-diagram.png" alt="demo" >}}
 
 <div style="text-align: justify">
 System Diagram. Module 1: Our system takes in sensor data from the LiDAR, RGB camera, and Inertial Measurement Unit
@@ -31,6 +30,20 @@ landmarks, is used to associate fruits across multiple time sessions. Module 5: 
 the 4D data association, we can construct a 4D metric-semantic map, acquiring actionable information such as fruit counts, sizes, and
 positions throughout the entire growth season.
 </div>
+
+### BibTeX
+
+```
+@misc{lei20244dmetricsemanticmappingpersistent,
+      title={4D Metric-Semantic Mapping for Persistent Orchard Monitoring: Method and Dataset}, 
+      author={Jiuzhou Lei and Ankit Prabhu and Xu Liu and Fernando Cladera and Mehrad Mortazavi and Reza Ehsani and Pratik Chaudhari and Vijay Kumar},
+      year={2024},
+      eprint={2409.19786},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2409.19786}, 
+}
+```
 
 ### Acknowledgements
 

@@ -1,0 +1,11 @@
+{{- /*
+  Image with a baseURL-aware path.
+
+  Markdown's ![alt](/foo.png) emits a site-root path, which breaks when the
+  site is served from a subpath like /<repo>/ on GitHub Pages. Passing src
+  through relURL keeps it correct under any baseURL, so switching to a custom
+  domain later needs no content edits.
+
+  Usage: {{< img src="4d-system-diagram.png" alt="demo" >}}
+*/ -}}
+<img src="{{ relURL (.Get "src") }}" alt="{{ .Get "alt" }}" />

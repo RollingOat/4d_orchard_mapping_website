@@ -1,0 +1,7 @@
+# Hugo build output — built by CI, not committed
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Local archives
+public.zip
