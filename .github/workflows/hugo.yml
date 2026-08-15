@@ -24,10 +24,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # Pinned deliberately. The vendored hello-friend-ng theme uses APIs that
-      # Hugo removed in 0.140+, and conda-forge/Hugo only ship "extended"
-      # (SCSS-capable) builds from ~0.135 up. 0.135-0.139 is the only window
-      # that both builds the theme's SCSS and still accepts its template calls.
-      HUGO_VERSION: 0.139.5
+      # Hugo removed in 0.140+, and only "extended" builds can compile the
+      # theme's SCSS. 0.135-0.139 is the only window that satisfies both.
+      #
+      # Not 0.139.5: that tag shipped no release binaries at all (the local
+      # conda env has it only because conda-forge builds from source), so
+      # downloading it 404s. 0.139.4 is the newest tag in range with a
+      # published extended .deb.
+      HUGO_VERSION: 0.139.4
     steps:
       - name: Install Hugo CLI (extended)
         run: |
